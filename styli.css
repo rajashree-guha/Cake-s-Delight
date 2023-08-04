@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
- /* removing present style*/ 
+ 
  *{
     margin:0;
     padding:0;
@@ -9,10 +8,9 @@
 
  body{
     font-family: 'Poppins', sans-serif;
-    padding: 0 30px;
+    
 }
 
- 
  .flex{
      display:flex;
  }
@@ -37,8 +35,6 @@
      flex-wrap: wrap;
  }
 
-
-/* styling nav bar */
 nav a{
     text-decoration: 0;
     font-size:larger;
@@ -61,6 +57,12 @@ nav>a:hover{
     color: black;
     font-weight: bold;
 }
+
+nav img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
 nav h1{
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 29, 63);
@@ -68,32 +70,27 @@ nav h1{
     font-style: bold;
 }
 
-/* styling home page text */
-     
   .header{
-    min-height: 600px;
-    flex-wrap: wrap-reverse;
+    min-height: 600px; 
 }
 
 .header-text{
     width: 700px;
     padding-left: 120px;
     font-size: larger;
-    
-}
- /*styling home page picture  */
+    }
+
  .homepage{
     position: absolute;
     width:370px;
-    height:500px;
+    height:540px;
     left: 940px;
-    top: 180px;
+    top: 170px;
     right:492px;
     border-radius: 50px 50px 50px 50px;
+    border: 4px solid blueviolet;
       }
 
-
- /* creating button */
   .button {
         font-size: large;
         height: 30px;
@@ -106,78 +103,144 @@ nav h1{
         color: white;
          }
 
- /*  styling menu*/
  .header-menu{
     max-height: 300px;
 }
+
 .header-menu>h1{
     text-align: center;
 }
+
 .menu-section-container {
     padding-top: 50px;
+    padding-left: 25px;
     display: grid;
     grid-template-columns: repeat(3,450px);
     grid-template-rows: repeat(5, 500px);
 }
     
-
 .menu-section {
     align-items:center;
 
 }
-/* styling menu img */
+
 .menu-section img{
    
     max-width: 250px;
     max-height: 250px;
     border-radius: 50px 50px 50px 50px;
-    border: 4px solid blueviolet;
-    
+    border: 4px solid blueviolet;  
 }
+
 h5 {
     font-size: 14px;
 }
+
 h4{
     font-size: 18px;
 }
+
 #menu{
-    padding-top: 10%;
-    padding-bottom: 5%;
+    padding-top: 4%;
 }
-/* styling about-us header */
+
 .header-about-us{
     
     padding-left: 420px;
     padding-right: 400px;
     padding-top: 35px;
     padding-bottom:90px;
-    
-   
-}
+    }
+
 .header-about-us>h1{
     text-align: center;
     }
- /* styling contact */
  
 .footer-contact>h1{
     text-align: center;
 }
-/* making grid */
+
 .footer-contact-container{
     display: grid;
     grid-template-columns: repeat(3,420px);
     grid-template-rows: repeat(2, 320px);
     align-items: center;
     padding-left: 240px;
-    
 }
-/* styling footer img */
+
 .footer-contact-container img{
     max-width: 100px;
-    max-height: 100px;
+    height: 100px;
     border-radius: 50px 50px 50px 50px;
     border: 4px solid blueviolet;
+    }
     
+@media only screen and (max-width:1000px){
+    nav{
+        font-size: small;
+        padding: 0;
+        width: 100%;   
+    }
+
+    nav img{
+        max-width:90px ;
+        max-height: 90px;
+    }
+    
+    .homepage{
+        position:absolute;
+        width:270px;
+        height:450px;
+        left: 600px;
+        top: 190px;
+        right:0px;
+        border-radius: 80px 80px 80px 80px;
+          }
+
+    .header-text>h1{
+        width: 200px;
+        font-size: x-large;
+        text-align: left;
+         }
+    .header-text>h4{
+        width: 300px;
+
+        font-size: small;
+        text-align: left;
+             }
+
+    .menu-section-container {
+        display: grid;
+        grid-template-columns: repeat(2,150px);
+        grid-template-rows: repeat(8, 500px);
+        padding-top: 0px;
+        } 
+
+    .menu-section-container img{
+        width:170px;
+        height:150px;
+    }  
+    
+    .header-about-us{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 25px;
+        text-align:center;
+    }
+    .footer-contact-container{
+        display: grid;
+        grid-template-columns: repeat(1,350px);
+        grid-template-rows: repeat(3, 180px);
+        text-align: initial; 
+        padding-top: 30px;
+    }
+
+    .footer-contact-container img{
+        max-width: 50px;
+        height: 50px;
+        border-radius: 50px 50px 50px 50px;
+        border: 4px solid blueviolet;
+        }
+
 }
-
-
+    
