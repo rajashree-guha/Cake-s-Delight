@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ /* removing present style*/ 
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0 30px;
+}
+
+ 
+ .flex{
+     display:flex;
+ }
+ 
+ .space-evenly{
+     justify-content: space-evenly;
+ }
+ 
+ .space-between {
+     justify-content: space-between;
+ }
+ 
+ .align-center{
+     align-items:center;
+ }
+ 
+ .direction-column{
+     flex-direction: column;
+ }
+ 
+ .wrap{
+     flex-wrap: wrap;
+ }
+
+
+/* styling nav bar */
+nav a{
+    text-decoration: 0;
+    font-size:larger;
+    color:whitesmoke;
+    font-weight: bold;
+    text-size-adjust: 50px;
+    
+ }
+
+nav{
+    background-color:rgb(179, 113, 241);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+nav>a:hover{
+    color: black;
+    font-weight: bold;
+}
+nav h1{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 29, 63);
+    font-size: xx-large;
+    font-style: bold;
+}
+
+/* styling home page text */
+     
+  .header{
+    min-height: 600px;
+    flex-wrap: wrap-reverse;
+}
+
+.header-text{
+    width: 700px;
+    padding-left: 120px;
+    font-size: larger;
+    
+}
+ /*styling home page picture  */
+ .homepage{
+    position: absolute;
+    width:370px;
+    height:500px;
+    left: 940px;
+    top: 180px;
+    right:492px;
+    border-radius: 50px 50px 50px 50px;
+      }
+
+
+ /* creating button */
+  .button {
+        font-size: large;
+        height: 30px;
+        width: 150px;
+        border-radius:50px 50px 50px 50px ;
+        background-color:rgb(179, 113, 241);
+        margin-top: 30px;
+        text-align: center;
+        padding-top: 2px;
+        color: white;
+         }
+
+ /*  styling menu*/
+ .header-menu{
+    max-height: 300px;
+}
+.header-menu>h1{
+    text-align: center;
+}
+.menu-section-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,450px);
+    grid-template-rows: repeat(5, 500px);
+}
+    
+
+.menu-section {
+    align-items:center;
+
+}
+/* styling menu img */
+.menu-section img{
+   
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50px 50px 50px 50px;
+    border: 4px solid blueviolet;
+    
+}
+h5 {
+    font-size: 14px;
+}
+h4{
+    font-size: 18px;
+}
+#menu{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+/* styling about-us header */
+.header-about-us{
+    
+    padding-left: 420px;
+    padding-right: 400px;
+    padding-top: 35px;
+    padding-bottom:90px;
+    
+   
+}
+.header-about-us>h1{
+    text-align: center;
+    }
+ /* styling contact */
+ 
+.footer-contact>h1{
+    text-align: center;
+}
+/* making grid */
+.footer-contact-container{
+    display: grid;
+    grid-template-columns: repeat(3,420px);
+    grid-template-rows: repeat(2, 320px);
+    align-items: center;
+    padding-left: 240px;
+    
+}
+/* styling footer img */
+.footer-contact-container img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50px 50px 50px 50px;
+    border: 4px solid blueviolet;
+    
+}
+
+
